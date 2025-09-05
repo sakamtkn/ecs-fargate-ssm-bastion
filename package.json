@@ -1,0 +1,24 @@
+{
+  "name": "ecs-fargate-bastion-cdk",
+  "version": "1.0.0",
+  "description": "ECS Fargate bastion with SSM port forwarding",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.9.0",
+    "aws-cdk": "^2.100.0"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.100.0",
+    "constructs": "^10.0.0",
+    "@aws-sdk/client-ecs": "^3.400.0",
+    "@aws-sdk/client-ssm": "^3.400.0"
+  }
+}
